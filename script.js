@@ -22,7 +22,7 @@ function showSuccess(input)
 function validateEmail(email)
 {
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    if(!(re.test(String(email.value).toLowerCase()))) showError(email, 'Please enter a valid email address.');
+    if(!(re.test(String(email.value).toLowerCase()))) showError(email, email.value === "" ?'Email is required!':'Please enter a valid email address.');
     else showSuccess(email);
 }
 
@@ -34,7 +34,7 @@ function validatePassword(password)
            /[^A-Za-z0-9]/.test(password.value) &&
            (password.value).length >=8;
 
-    if(!flag) showError(password, 'Pleas enter a valid password');
+    if(!flag) showError(password, password.value===''?'Pleas enter the password!':'Pleas enter a valid password');
     else showSuccess(password);
 }
 
@@ -68,14 +68,14 @@ function checkRequired(inputArr)
 
 function confirmPassword(input1, input2)
 {
-    if(input1.value === input2.value && input2!='') 
+    if(input1.value === input2.value && input2.value!='') 
     {
         showSuccess(input2);
 
     }
     else 
     {
-        showError(input2, 'Password does not match');
+        showError(input2, input2.value===''?'Please enter a password!':'Password does not match');
 
     }
 }
@@ -85,13 +85,13 @@ function confirmPassword(input1, input2)
 form.addEventListener('submit', function(e)
 {
     e.preventDefault();
-    if(checkRequired([username, email, password, password2]))
-    {
-        validateEmail(email);
-        validatePassword(password);
-        confirmPassword(password, password2);
+    checkRequired([username]);
+    
+    validateEmail(email);
+    validatePassword(password);
+    confirmPassword(password, password2);
 
-    }
+    
     
 
 }
