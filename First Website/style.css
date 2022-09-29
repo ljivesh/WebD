@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
 body
 {
     background-color: #C2DED1;
     color: #354259;
+    font-family: 'Nunito', sans-serif;
+    font-size: medium;
 }
 
 hr
@@ -20,4 +25,8 @@ h1
 h2
 {
     color: #D1512D;
+}
+.pfp
+{
+    border-radius: 100px;
 }
