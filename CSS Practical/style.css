@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&display=swap');
+
+
+
+body
+{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0px;
+}
+h1, h2, h3
+{
+    color: #66BFBF;
+
+}
+
+.intro-card
+{
+    background-color: #EAF6F6;
+    position: relative;
+    bottom: 250px;
+
+}
+
+.cloud-1
+{
+    position: relative;
+    height: 30%;
+    top: 300px;
+}
+.cloud-2
+{
+
+    position: relative;
+    height: 30%;
+}
+.mountain
+{
+    position: relative;
+}
+
+.intro
+{
+    position: relative;
+    top: 500px;
+ 
+}
+.intro h1
+{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 5rem;
+    margin-bottom: 0px;   
+}
+.intro h2
+{
+    font-weight: normal;
+}
+
+.marked
+{
+    text-decoration: underline;
+}
+
+
+.info
+{
+    position: relative;
+    bottom: 200px;
+}
+
+
+.pfp
+{
+    border-radius: 50%;
+}
+
+
+.skill-row
+{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.skill-row h2
+{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+.skill-row p
+{
+    color: #40514E;
+}
+.coding-icon
+{
+    width: 20%;
+    float: left;
+    margin-right: 50px;
+}
+.anime
+{
+    width: 20%;
+    float: right;
+    margin-left: 50px;
+}
+
+hr
+{
+    width: 20%;
+    margin: 50px auto;
+    border-top: 10px dotted #717a7a;
+    border-bottom: white;
+}
+
+
+
+.contact h2
+{
+    font-size: 30px;
+}
+
+.contact p
+{
+    line-height: 2;
+}
+.contact button
+{
+    background-color: #66BFbF;
+    color: white;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-color: white;
+    margin-top: 30px;
+}
+
+.socials
+{
+    background-color: #66BFBF;
+    color: #EAF6F6;
+    padding: 20px;
+}
+.socials a
+{
+    color: #11999E;
+    text-decoration: solid;
+    font-weight: bolder;
+    margin: 5px;
+}
+.socials a:hover
+{
+    color: white;
+}
+
+form
+{
+    width: 30%;
+    margin: 20px auto;
+    text-align: left;
+    font-size: large;
+    text-decoration: solid;
+    font-weight: bolder;
+}
+
+form input
+{
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+form textarea
+{
+    width: 100%;
+    margin-top: 10px;
+}
+.submit
+{
+    background-color: #66BFbF;
+    color: white;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-color: white;
+    margin-top: 30px;
+}
