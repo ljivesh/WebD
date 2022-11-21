@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#lvl
+{
+    margin: 50px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: #31E1F7;
+}
+
+body
+{
+    background-color: #150050;
+    text-align: center;
+}
+
+
+.box
+{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin: 20px 20px;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 10px;
+    background-color: pink;
+}
+.box.red
+{
+    background-color: red;
+}
+.box.blue
+{
+    background-color: blue;
+}
+.box.green
+{
+    background-color: green;
+}
+.box.yellow
+{
+    background-color: yellow;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+  
+.game-over
+{
+    background-color: red;
+    opacity: 0.8;
+}
+
+footer
+{
+    margin-top: 3rem;
+    font-size: 2rem;
+    background-color: #DC3535;
+    font-family: 'Oswald', sans-serif;
+}
