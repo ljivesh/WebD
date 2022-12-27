@@ -19,7 +19,6 @@ app.get('/', (req,res) => {
         day: 'numeric',
         month: 'long'
     }
-    // const todayDate = `${currentTime.getDate()}/${currentTime.getMonth()+1}/${currentTime.getFullYear()}`;
     const ejsData = {
         today: currentTime.toLocaleDateString('en-us', options),
         items: listItems
