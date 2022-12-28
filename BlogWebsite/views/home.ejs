@@ -1,0 +1,10 @@
+<%- include('partials/header'); -%>
+<h1>Home</h1>
+<p><%=homeContent%></p>
+<% posts.forEach( (post) => { %>
+    <div class="truncate">
+        <h2> <a href="/posts/<%=post.title%>"><%= post.title %></a> </h2>
+        <p> <%= post.content %> </p>
+    </div>
+<% }); %>
+<%- include('partials/footer'); -%>
